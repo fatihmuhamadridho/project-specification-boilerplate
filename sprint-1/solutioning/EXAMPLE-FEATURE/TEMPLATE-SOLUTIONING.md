@@ -222,5 +222,5 @@ ORDT03001
 | Http Status | Code        | E/N/T | Type      | Category | Message                          |
 | ----------- | ----------- | ----- | --------- | -------- | -------------------------------- |
 | 200         | `ORDS00000` | E     | Success   | General  | Order created successfully       |
-| 400         | `ORDT03001` | E     | Technical | Database | Order database is unavailable    |
+| 500         | `ORDT03001` | E     | Technical | Database | Order database is unavailable    |
 | 500         | `ORDT00000` | E     | Technical | Generic  | Unexpected internal server error |

@@ -36,9 +36,9 @@ Use the project’s agreed estimation rubric. Record the applicable score for ea
 > **Weight per Parameter :** 15
 > **New Technology :** [Experienced in project (1) / Ever implement (2) / Aware but never implement (3) / Never implement and not aware (4)] E.g Experienced in project
 > **Surrounding Involvement :** [0 (1) / 1 (2) / 2 (3) / ≧ 3 (4)] E.g Gen21
-> **Technical Flow :** [1-4 sequence (1) / 5-7 sequence (2) / 8-10 sequence (2) / > 10 sequence (3)] E.g 13  
-> **Acceptance Criteria :** [1-4 / 5-8 / 9-12 / > 12]
-> **Size :** (1 x 15) + (2 x 15) + (3 x 15) + (1 x 15) = 15 + 30 + 45 + 15 = 105 (M)
+> **Technical Flow :** [1-4 steps (1) / 5-7 steps (2) / 8-10 steps (3) / > 10 steps (4)]
+> **Acceptance Criteria :** [1-4 (1) / 5-8 (2) / 9-12 (3) / > 12 (4)]
+> **Size :** [Sum of four parameter scores x 15; map score to Sizing Reference]
 
 ## Subtask
 
@@ -78,11 +78,5 @@ Break the story into deliverable frontend and backend tasks when applicable. Des
 Record clarifications about estimation or sizing rules that are needed to interpret this document. Distinguish confirmed team rules from examples, and cite the rule owner or source where applicable.
 
 1. [Confirmed sizing or calculation rule, with source if available]
-   of story, example if size story is S then size task must be also S
-2. Story point is the equal from mandays times 2
-   of story, example if size story is S then size task must be also S
-3. Story point is the equal from mandays times 2
-   of story, example if size story is S then size task must be also S
-4. Story point is the equal from mandays times 2
-   of story, example if size story is S then size task must be also S
-5. Story point is the equal from mandays times 2
+2. [Confirmed relationship between story size and task size, if applicable]
+3. [Confirmed conversion between mandays and story points, if applicable]

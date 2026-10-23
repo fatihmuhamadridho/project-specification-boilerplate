@@ -1,6 +1,6 @@
 # Glossary
 
-Use this glossary for terms shared across the project specification and current-state documents. Define feature-specific terms in the document where they are introduced.
+Use this glossary for terms shared across Sprint 1 documents. Define feature-specific terms in the document where they are introduced.
 
 | Term                                    | Definition                                                                                                                               |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,4 +31,4 @@ Use this glossary for terms shared across the project specification and current-
 | User                                    | A person or role that interacts with a product, process, or service.                                                                     |
 | User Story                              | A short statement of who needs a capability, what they need, and why they need it.                                                       |
 | Validation                              | Checks that confirm input or an action meets defined requirements and rules.                                                             |
-| When / Given / Then                     | A format for expressing a scenario: Given describes context, When describes an action or event, and Then describes the expected outcome. |
+| Given / When / Then                     | A format for expressing a scenario: Given describes context, When describes an action or event, and Then describes the expected outcome. |

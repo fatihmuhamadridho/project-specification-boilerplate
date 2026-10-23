@@ -63,9 +63,9 @@ Illustrative estimate only. Replace with estimates assessed by the delivery team
 > **Weight per Parameter :** 15
 > **New Technology :** Experienced in project (1)
 > **Surrounding Involvement :** 1 (2)
-> **Technical Flow :** 5-7 sequence (2)
+> **Technical Flow :** 8-10 steps (3)
 > **Acceptance Criteria :** 1-4 (1)
-> **Size :** (1 x 15) + (2 x 15) + (2 x 15) + (1 x 15) = 15 + 30 + 30 + 15 = 90 (S)
+> **Size :** (1 x 15) + (2 x 15) + (3 x 15) + (1 x 15) = 15 + 30 + 45 + 15 = 105 (M)
 
 ## Subtask
 
@@ -83,15 +83,15 @@ Illustrative task estimates only.
 
 | Task                                              |  Mandays | Story Point |
 | ------------------------------------------------- | -------: | ----------: |
-| Return requests filtered by signed-in customer    |     0.50 |        1.00 |
+| Return requests filtered by signed-in customer    |     0.75 |        1.50 |
 | Enforce request ownership and hide internal notes |     0.50 |        1.00 |
-| **Total**                                         | **1.00** |    **2.00** |
+| **Total**                                         | **1.25** |    **2.50** |
 
 ### Summary
 
 > **FE :** 1.50
-> **BE :** 2.00
-> **Size Task :** S
+> **BE :** 2.50
+> **Size Task :** M
 
 ## Sizing Reference
 
@@ -106,4 +106,4 @@ Illustrative task estimates only.
 
 1. The example uses the sizing reference and estimation assumptions shown above; confirm estimates and sizing against the team’s agreed process.
 2. Example story point values are estimated as mandays multiplied by two.
-3. Example task size follows the story size for illustration; confirm this rule with the team before applying it to delivery work.
+3. The illustrative frontend and backend subtasks total 4 story points, within the M reference range. Confirm the relationship between story size and task estimates with the team before applying it to delivery work.

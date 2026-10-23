@@ -20,19 +20,20 @@ sequenceDiagram
     Client->>Gateway: POST /order/v1/orders
     Gateway->>Service: Forward authenticated request
     Service->>Service: Validate payload, cart ownership, address ownership, and idempotency key
-    Service->>DB: Save order and order items
     alt Invalid business data
-        DB-->>Service: Validation or ownership error
         Service-->>Gateway: 400 ORDB02001 / ORDB02002
         Gateway-->>Client: Business error response
-    else Database unavailable
-        DB-->>Service: Database error
-        Service-->>Gateway: 500 ORDT03001
-        Gateway-->>Client: Technical error response
-    else Success
-        DB-->>Service: Order saved
-        Service-->>Gateway: 200 ORDS00000
-        Gateway-->>Client: Order response
+    else Valid request
+        Service->>DB: Save order and order items
+        alt Database unavailable
+            DB-->>Service: Database error
+            Service-->>Gateway: 500 ORDT03001
+            Gateway-->>Client: Technical error response
+        else Success
+            DB-->>Service: Order saved
+            Service-->>Gateway: 200 ORDS00000
+            Gateway-->>Client: Order response
+        end
     end
 ```
 
@@ -204,7 +205,7 @@ The response envelope contains `status` and `data`. `status` contains a service 
 {
   "status": {
     "code": "ORDT03001",
-    "message": "Order database is temporarily unavailable"
+    "message": "Order database is unavailable"
   },
   "data": null
 }
@@ -252,5 +253,5 @@ ORDT03001
 | 200         | `ORDS00000` | E     | Success   | General    | Order created successfully                       |
 | 400         | `ORDB02001` | E     | Business  | Validation | Cart does not belong to the submitted customer   |
 | 400         | `ORDB02002` | E     | Business  | Validation | Shipping address does not belong to the customer |
-| 400         | `ORDT03001` | E     | Technical | Database   | Order database is unavailable                    |
+| 500         | `ORDT03001` | E     | Technical | Database   | Order database is unavailable                    |
 | 500         | `ORDT00000` | E     | Technical | Generic    | Unexpected internal server error                 |
